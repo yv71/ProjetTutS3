@@ -11,25 +11,44 @@ package capitalism.metier;
  */
 public class ContratVente extends Contrat {
 
-	private int Prix;
+    private int prix;
+    private Ressources ressourceSource;
+    private int qteSource;
 
-	/**
-	 * 
-	 * @param Source
-	 * @param Destinataire
-	 * @param Duree
-	 * @param Prix
-	 * @param ressource
-	 * @param Qte
-	 */
-	public ContratVente(Entreprise Source, Entreprise Destinataire, in Duree, int Prix, Ressources ressource, int Qte) {
-		// TODO - implement ContratVente.ContratVente
-		throw new UnsupportedOperationException();
-	}
+    public ContratVente(Entreprise entSource, Entreprise entDestinataire, int duree, Ressources ressourceSource, int qteSource, int prix) {
+        super(entSource, entDestinataire, duree);
+        this.prix=prix;
+        this.qteSource=qteSource;
+        this.ressourceSource=ressourceSource;
+    }
 
-	public int getPrixAchatEntrepriseSource() {
-		// TODO - implement ContratVente.getPrixAchatEntrepriseSource
-		throw new UnsupportedOperationException();
-	}
+    @Override
+    public TypeContrat getTypeContrat() {
+        return TypeContrat.Vente;
+    }
+
+    public int getPrix() {
+        return prix;
+    }
+
+    public void setPrix(int prix) {
+        this.prix = prix;
+    }
+
+    public Ressources getRessourceSource() {
+        return ressourceSource;
+    }
+
+    public void setRessourceSource(Ressources ressourceSource) {
+        this.ressourceSource = ressourceSource;
+    }
+
+    public int getQteSource() {
+        return qteSource;
+    }
+
+    public void setQteSource(int qteSource) {
+        this.qteSource = qteSource;
+    }
 
 }

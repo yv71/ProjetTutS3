@@ -9,34 +9,56 @@ package capitalism.metier;
  *
  * @author Damien
  */
-public class ContratEchange extends Contrat {
+public class ContratEchange extends Contrat{
+    
+    private Ressources ressourceSource;
+    private int qteSource;
+    private Ressources ressourceDest;
+    private int qteDest;
 
-	private Ressources RessourceSource;
-	private int QteSource;
+    public ContratEchange(Entreprise entSource, Entreprise entDestinataire, int duree, Ressources ressourceSource, int qteSource, Ressources ressourceDest, int qteDest) {
+        super(entSource, entDestinataire, duree);
+        this.qteDest=qteDest;
+        this.qteSource=qteSource;
+        this.ressourceDest=ressourceDest;
+        this.ressourceSource=ressourceSource;
+    }
+    
+    @Override
+    public TypeContrat getTypeContrat() {
+        return TypeContrat.Echange;
+    }
 
-	/**
-	 * 
-	 * @param Source
-	 * @param Destinataire
-	 * @param Duree
-	 * @param RessourceSource
-	 * @param QteSource
-	 * @param RessourceDest
-	 * @param QteDest
-	 */
-	public void ContraEchange(Entreprise Source, Entreprise Destinataire, in Duree, Ressources RessourceSource, int QteSource, Ressources RessourceDest, int QteDest) {
-		// TODO - implement ContratEchange.ContraEchange
-		throw new UnsupportedOperationException();
-	}
+    public Ressources getRessourceSource() {
+        return ressourceSource;
+    }
 
-	public int getQuantiteRessourcesEntrepriseSource() {
-		// TODO - implement ContratEchange.getQuantiteRessourcesEntrepriseSource
-		throw new UnsupportedOperationException();
-	}
+    public void setRessourceSource(Ressources ressourceSource) {
+        this.ressourceSource = ressourceSource;
+    }
 
-	public Ressources getRessourceSource() {
-		// TODO - implement ContratEchange.getRessourceSource
-		throw new UnsupportedOperationException();
-	}
+    public int getQteSource() {
+        return qteSource;
+    }
+
+    public void setQteSource(int qteSource) {
+        this.qteSource = qteSource;
+    }
+
+    public Ressources getRessourceDest() {
+        return ressourceDest;
+    }
+
+    public void setRessourceDest(Ressources ressourceDest) {
+        this.ressourceDest = ressourceDest;
+    }
+
+    public int getQteDest() {
+        return qteDest;
+    }
+
+    public void setQteDest(int qteDest) {
+        this.qteDest = qteDest;
+    }
 
 }

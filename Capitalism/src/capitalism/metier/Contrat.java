@@ -10,34 +10,46 @@ package capitalism.metier;
  * @author Damien
  */
 public abstract class Contrat {
+    
+    private Entreprise entSource;
+    private Entreprise entDestinataire;
+    private int duree;
 
-	private Entreprise Source;
-	private Entreprise Destinataire;
-	private int Duree;
-	private Ressources RessourceDest;
-	private int QteDest;
+    /**
+    * 
+    * @param entSource
+    * @param entDestinataire
+    * @param duree
+    */
+    public Contrat(Entreprise entSource, Entreprise entDestinataire, int duree) {
+       this.duree=duree;
+       this.entDestinataire=entDestinataire;
+       this.entSource=entSource;
+    }
 
-	/**
-	 * 
-	 * @param Source
-	 * @param Destinataire
-	 * @param Duree
-	 */
-	public Contrat(Entreprise Source, Entreprise Destinataire, int Duree) {
-		// TODO - implement Contrat.Contrat
-		throw new UnsupportedOperationException();
-	}
+    public abstract TypeContrat getTypeContrat();
 
-	public abstract TypeContrat getTypeContrat();
+    public Entreprise getEntSource() {
+        return entSource;
+    }
 
-	public int getQuantiteRessourcesEntrepriseDest() {
-		// TODO - implement Contrat.getQuantiteRessourcesEntrepriseDest
-		throw new UnsupportedOperationException();
-	}
+    public void setEntSource(Entreprise entSource) {
+        this.entSource = entSource;
+    }
 
-	public Ressources getRessourceDest() {
-		// TODO - implement Contrat.getRessourceDest
-		throw new UnsupportedOperationException();
-	}
+    public Entreprise getEntDestinataire() {
+        return entDestinataire;
+    }
 
+    public void setEntDestinataire(Entreprise entDestinataire) {
+        this.entDestinataire = entDestinataire;
+    }
+
+    public int getDuree() {
+        return duree;
+    }
+
+    public void setDuree(int duree) {
+        this.duree = duree;
+    }
 }

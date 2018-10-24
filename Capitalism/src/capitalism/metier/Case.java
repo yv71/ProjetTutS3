@@ -22,8 +22,8 @@ public abstract class Case {
      * @param map 
      */
     public Case(Coordonnee coordonnees, Map map) {
-            this.coordonnees=coordonnees;
-            this.map=map;
+        this.coordonnees=coordonnees;
+        this.map=map;
     }
 
     public Coordonnee getCoordonnees() {
