@@ -3,13 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package capitalism.metier;
+package capitalism.metier.Carte.Cases;
 
 /**
  *
  * @author Damien
  */
-public enum TypeContrat {
-    Echange,
-    Vente
+public enum TypeCase {
+    CaseEau,
+    CaseRessource,
+    CaseTerre,
+    CaseEmplacement,
+    CaseVille,
+    CaseVilleEmplacement
 }

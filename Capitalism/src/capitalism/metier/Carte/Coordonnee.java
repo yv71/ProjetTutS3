@@ -1,7 +1,7 @@
 /*
  * Merci à M. Simmonet pour cette classe issue du projet de Graphes du S2
  */
-package capitalism.metier;
+package capitalism.metier.Carte;
 
 /**
  * Coordonnées

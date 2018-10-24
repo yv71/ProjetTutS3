@@ -3,30 +3,39 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package capitalism.metier;
+package capitalism.metier.Contrats;
+
+import capitalism.metier.Entreprises.Entreprise;
+import capitalism.metier.Ressources;
 
 /**
  *
  * @author Damien
  */
-public class ContratEchange extends Contrat{
-    
+public class ContratVente extends Contrat {
+
+    private int prix;
     private Ressources ressourceSource;
     private int qteSource;
-    private Ressources ressourceDest;
-    private int qteDest;
 
-    public ContratEchange(Entreprise entSource, Entreprise entDestinataire, int duree, Ressources ressourceSource, int qteSource, Ressources ressourceDest, int qteDest) {
+    public ContratVente(Entreprise entSource, Entreprise entDestinataire, int duree, Ressources ressourceSource, int qteSource, int prix) {
         super(entSource, entDestinataire, duree);
-        this.qteDest=qteDest;
+        this.prix=prix;
         this.qteSource=qteSource;
-        this.ressourceDest=ressourceDest;
         this.ressourceSource=ressourceSource;
     }
-    
+
     @Override
     public TypeContrat getTypeContrat() {
-        return TypeContrat.Echange;
+        return TypeContrat.Vente;
+    }
+
+    public int getPrix() {
+        return prix;
+    }
+
+    public void setPrix(int prix) {
+        this.prix = prix;
     }
 
     public Ressources getRessourceSource() {
@@ -43,22 +52,6 @@ public class ContratEchange extends Contrat{
 
     public void setQteSource(int qteSource) {
         this.qteSource = qteSource;
-    }
-
-    public Ressources getRessourceDest() {
-        return ressourceDest;
-    }
-
-    public void setRessourceDest(Ressources ressourceDest) {
-        this.ressourceDest = ressourceDest;
-    }
-
-    public int getQteDest() {
-        return qteDest;
-    }
-
-    public void setQteDest(int qteDest) {
-        this.qteDest = qteDest;
     }
 
 }

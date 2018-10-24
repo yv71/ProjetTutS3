@@ -5,6 +5,8 @@
  */
 package capitalism.metier;
 
+import capitalism.metier.Entreprises.Entreprise;
+
 /**
  *
  * @author Damien

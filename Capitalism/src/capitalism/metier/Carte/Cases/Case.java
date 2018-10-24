@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package capitalism.metier;
+package capitalism.metier.Carte.Cases;
+
+import capitalism.metier.Carte.Map;
 
 /**
  *

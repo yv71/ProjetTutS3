@@ -5,6 +5,10 @@
  */
 package capitalism.metier;
 
+import capitalism.metier.Usines.UsineProduit;
+import capitalism.metier.Usines.Usine;
+import capitalism.metier.Carte.Cases.CaseEmplacement;
+import capitalism.metier.Carte.Cases.TypeCase;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -90,6 +94,8 @@ public class CaseEmplacementTest {
         assertEquals(expResultFaux, result);
         boolean expResultVrai = true;
         instance.setUsine(new UsineProduit(null,null));
+        boolean result2 = instance.estOccupe();
+        assertEquals(expResultVrai, result2);
     }
     
 }

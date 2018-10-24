@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package capitalism.metier;
+package capitalism.metier.Carte;
 
+import capitalism.metier.Carte.Cases.Case;
+import capitalism.metier.Jeu;
 import java.util.ArrayList;
 import java.util.HashMap;
 

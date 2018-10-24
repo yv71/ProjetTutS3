@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package capitalism.metier;
+package capitalism.metier.Entreprises;
+
+import capitalism.metier.Jeu;
 
 /**
  *
