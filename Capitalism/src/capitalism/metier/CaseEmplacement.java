@@ -11,24 +11,30 @@ package capitalism.metier;
  */
 public class CaseEmplacement extends Case {
 
-	private boolean EstOcuupe;
+    private Usine usine;
 
-	/**
-	 * 
-	 * @param Usine
-	 */
-	public void construireUsine(Usine Usine) {
-		// TODO - implement CaseEmplacement.construireUsine
-		throw new UnsupportedOperationException();
-	}
+    public CaseEmplacement(Coordonnee coordonnees, Map map) {
+        super(coordonnees, map);
+        this.usine=null;
+    }
 
-	/**
-	 * 
-	 * @param Usine
-	 */
-	public void supprimerUsine(Usine Usine) {
-		// TODO - implement CaseEmplacement.supprimerUsine
-		throw new UnsupportedOperationException();
-	}
+    @Override
+    public TypeCase getType() {
+        return TypeCase.CaseEmplacement;
+    }
 
+    public Usine getUsine() {
+        return usine;
+    }
+
+    public void setUsine(Usine usine) {
+        this.usine = usine;
+    }
+    /**
+     * 
+     * @return Vrai si une usine est déjà construite sur cette case et Faux dans le cas contraire
+     */
+    public boolean estOccupe(){
+        return this.getUsine()!=null;
+    }
 }

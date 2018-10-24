@@ -11,6 +11,24 @@ package capitalism.metier;
  */
 public class CaseRessource extends Case {
 
-	private Ressources Ressource;
+    private Ressources ressource;
 
+    public CaseRessource(Coordonnee coordonnees, Map map) {
+        super(coordonnees, map);
+        this.ressource=null;
+    }
+
+    @Override
+    public TypeCase getType() {
+        return TypeCase.CaseRessource;
+    }
+
+    public Ressources getRessource() {
+        return ressource;
+    }
+
+    public void setRessource(Ressources ressource) {
+        this.ressource = ressource;
+    }
+    
 }

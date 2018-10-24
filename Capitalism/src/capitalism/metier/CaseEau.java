@@ -10,4 +10,13 @@ package capitalism.metier;
  * @author Damien
  */
 public class CaseEau extends Case {
+
+    public CaseEau(Coordonnee coordonnees, Map map) {
+        super(coordonnees, map);
+    }
+
+    @Override
+    public TypeCase getType() {
+        return TypeCase.CaseEau;
+    }
 }
