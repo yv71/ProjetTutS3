@@ -7,39 +7,43 @@ package capitalism.metier;
 
 /**
  *
+ * @author Matthieu
  * @author Damien
  */
 public abstract class Case {
     
-    private Coordonnee coordonnees;
-    private Map map;
-
-    public abstract TypeCase getType();
-
-    /**
-     * 
-     * @param coordonnees
-     * @param map 
-     */
-    public Case(Coordonnee coordonnees, Map map) {
-        this.coordonnees=coordonnees;
-        this.map=map;
+    private int ligne;                                                          //ligne de la case
+    private int colonne;                                                        //colonne de la case 
+    private Map map;                                                            //Map du jeu
+    
+    
+//---------- CONSTRUCTEURS -----------------------------------------------------
+    public Case(int _ligne,int _colonne,Map _map) {
+        //Initialisation
+        this.ligne = _ligne;
+        this.colonne = _colonne;
+        this.map = _map;
     }
+//------------------------------------------------------------------------------
 
-    public Coordonnee getCoordonnees() {
-        return coordonnees;
-    }
+//---------- GETEUR/SETEUR -----------------------------------------------------
 
-    public void setCoordonnees(Coordonnee coordonnees) {
-        this.coordonnees = coordonnees;
-    }
-
+    //Renvoie la carte du jeu
     public Map getMap() {
-        return map;
+        return this.map;
     }
-
-    public void setMap(Map map) {
-        this.map = map;
+    
+    //Renvoie la ligne de la case
+    public int getLigne() {
+        return this.ligne;
     }
+    
+    //Renvoie la colonne de la case
+    public int getColonne() {
+        return this.colonne;
+    }
+    
+    //Renvoie le type de la case
+    public abstract TypeCase getType(); 
     
 }

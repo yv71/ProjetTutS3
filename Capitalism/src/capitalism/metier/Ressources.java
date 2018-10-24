@@ -10,16 +10,16 @@ package capitalism.metier;
  * @author Damien
  */
 public enum Ressources {
-	Bois,
-	Carton,
-	Metal,
-	Acier,
-	PlaqueMetal,
-	Nourriture,
-	Cereales,
-	Cagettes,
-	Meubles,
-	Conserves,
-	Ordinateurs,
-	Medicaments
+    Bois,
+    Carton,
+    Metal,
+    Acier,
+    PlaqueMetal,
+    Nourriture,
+    Cereales,
+    Cagettes,
+    Meubles,
+    Conserves,
+    Ordinateurs,
+    Medicaments
 }

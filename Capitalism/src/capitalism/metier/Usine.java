@@ -11,42 +11,66 @@ package capitalism.metier;
  */
 public abstract class Usine {
 
-	private String Nom;
-	private Entreprise Proprietaire;
+    private String nom;
+    private Entreprise proprietaire;
 
-	/**
-	 * 
-	 * @param nouveauNom
-	 */
-	public void changerNom(String nouveauNom) {
-		// TODO - implement Usine.changerNom
-		throw new UnsupportedOperationException();
-	}
+//---------- CONSTRUCTEURS -----------------------------------------------------
+    
+    /**
+     * 
+     * @param nom
+     * @param proprietaire
+     */
+    public Usine(String nom, Entreprise proprietaire) {
+        this.nom=nom;
+        this.proprietaire=proprietaire;
+    }
+    
+//------------------------------------------------------------------------------
 
-	public void vendre() {
-		// TODO - implement Usine.vendre
-		throw new UnsupportedOperationException();
-	}
+//---------- GETEUR/SETEUR -----------------------------------------------------
 
-	public abstract void produire();
+    public String getNom() {
+        return nom;
+    }
 
-	/**
-	 * 
-	 * @param Nom
-	 * @param Proprietaire
-	 */
-	public Usine(String Nom, Entreprise Proprietaire) {
-		// TODO - implement Usine.Usine
-		throw new UnsupportedOperationException();
-	}
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
 
-	/**
-	 * 
-	 * @param NouveauProprietaire
-	 */
-	public void vendreUsine(Entreprise NouveauProprietaire) {
-		// TODO - implement Usine.vendreUsine
-		throw new UnsupportedOperationException();
-	}
+    public Entreprise getProprietaire() {
+        return proprietaire;
+    }
+
+    public void setProprietaire(Entreprise proprietaire) {
+        this.proprietaire = proprietaire;
+    }
+    
+//------------------------------------------------------------------------------
+    
+    /**
+     * 
+     * @param nouveauNom
+     */
+    public void changerNom(String nouveauNom) {
+            // TODO - implement Usine.changerNom
+            throw new UnsupportedOperationException();
+    }
+
+    public void vendre() {
+            // TODO - implement Usine.vendre
+            throw new UnsupportedOperationException();
+    }
+
+    public abstract void produire();
+
+    /**
+     * 
+     * @param nouveauProprietaire
+     */
+    public void vendreUsine(Entreprise nouveauProprietaire) {
+            // TODO - implement Usine.vendreUsine
+            throw new UnsupportedOperationException();
+    }
 
 }

@@ -11,17 +11,23 @@ package capitalism.metier;
  */
 public class Ville {
 
-	private String Nom;
-	private int NbEmplacements;
+    private String nom;
+    private int nbEmplacements;
 
-	public int getNbUsines() {
-		// TODO - implement Ville.getNbUsines
-		throw new UnsupportedOperationException();
-	}
+    public Ville(String nom, int nbEmplacements) {
+        this.nom = nom;
+        this.nbEmplacements = nbEmplacements;
+    }
+    
 
-	public int getNbEntreprise() {
-		// TODO - implement Ville.getNbEntreprise
-		throw new UnsupportedOperationException();
-	}
+    public int getNbUsines() {
+            // TODO - implement Ville.getNbUsines
+            throw new UnsupportedOperationException();
+    }
+
+    public int getNbEntreprise() {
+            // TODO - implement Ville.getNbEntreprise
+            throw new UnsupportedOperationException();
+    }
 
 }

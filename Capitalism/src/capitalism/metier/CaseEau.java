@@ -11,8 +11,8 @@ package capitalism.metier;
  */
 public class CaseEau extends Case {
 
-    public CaseEau(Coordonnee coordonnees, Map map) {
-        super(coordonnees, map);
+    public CaseEau(int ligne, int colonne, Map map) {
+        super(ligne, colonne, map);
     }
 
     @Override

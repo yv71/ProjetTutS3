@@ -13,8 +13,8 @@ public class CaseRessource extends Case {
 
     private Ressources ressource;
 
-    public CaseRessource(Coordonnee coordonnees, Map map) {
-        super(coordonnees, map);
+    public CaseRessource(int ligne, int colonne, Map map) {
+        super(ligne, colonne, map);
         this.ressource=null;
     }
 

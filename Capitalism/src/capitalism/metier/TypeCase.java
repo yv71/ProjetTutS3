@@ -10,10 +10,10 @@ package capitalism.metier;
  * @author Damien
  */
 public enum TypeCase {
-	CaseEau,
-	CaseRessource,
-	CaseTerre,
-	CaseEmplacement,
-	CaseVille,
-	CaseVilleEmplacement
+    CaseEau,
+    CaseRessource,
+    CaseTerre,
+    CaseEmplacement,
+    CaseVille,
+    CaseVilleEmplacement
 }

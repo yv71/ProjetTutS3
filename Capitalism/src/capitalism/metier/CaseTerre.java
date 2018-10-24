@@ -11,8 +11,8 @@ package capitalism.metier;
  */
 public class CaseTerre extends Case {
 
-    public CaseTerre(Coordonnee coordonnees, Map map) {
-        super(coordonnees, map);
+    public CaseTerre(int ligne, int colonne, Map map) {
+        super(ligne, colonne, map);
     }
 
     @Override

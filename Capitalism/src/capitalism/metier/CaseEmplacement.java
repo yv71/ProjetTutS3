@@ -13,8 +13,8 @@ public class CaseEmplacement extends Case {
 
     private Usine usine;
 
-    public CaseEmplacement(Coordonnee coordonnees, Map map) {
-        super(coordonnees, map);
+    public CaseEmplacement(int ligne, int colonne, Map map) {
+        super(ligne, colonne, map);
         this.usine=null;
     }
 

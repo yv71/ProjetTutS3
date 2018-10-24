@@ -10,4 +10,13 @@ package capitalism.metier;
  * @author Damien
  */
 public class UsineProduit extends Usine {
+
+    public UsineProduit(String nom, Entreprise proprietaire) {
+        super(nom, proprietaire);
+    }
+
+    @Override
+    public void produire() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

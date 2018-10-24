@@ -11,15 +11,13 @@ package capitalism.metier;
  */
 public class Joueur extends Entreprise {
 
-	/**
-	 * 
-	 * @param Nom
-	 * @param Logo
-	 * @param Jeu
-	 */
-	public Joueur(String Nom, Image Logo, Jeu Jeu) {
-		// TODO - implement Joueur.Joueur
-		throw new UnsupportedOperationException();
-	}
+    /**
+     * 
+     * @param nom
+     * @param jeu
+     */
 
+    public Joueur(String nom, Jeu jeu) {
+        super(nom, jeu);
+    }
 }

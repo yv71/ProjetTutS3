@@ -10,6 +10,6 @@ package capitalism.metier;
  * @author Damien
  */
 public enum TypeContrat {
-	Echange,
-	Vente
+    Echange,
+    Vente
 }

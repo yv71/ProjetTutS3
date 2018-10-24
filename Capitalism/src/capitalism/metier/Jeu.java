@@ -11,45 +11,45 @@ package capitalism.metier;
  */
 public class Jeu {
 
-	private int Tour;
+    private int Tour;
 
-	public void newGame() {
-		// TODO - implement Jeu.newGame
-		throw new UnsupportedOperationException();
-	}
+    public void newGame() {
+            // TODO - implement Jeu.newGame
+            throw new UnsupportedOperationException();
+    }
 
-	public void loadGame() {
-		// TODO - implement Jeu.loadGame
-		throw new UnsupportedOperationException();
-	}
+    public void loadGame() {
+            // TODO - implement Jeu.loadGame
+            throw new UnsupportedOperationException();
+    }
 
-	public void saveGame() {
-		// TODO - implement Jeu.saveGame
-		throw new UnsupportedOperationException();
-	}
+    public void saveGame() {
+            // TODO - implement Jeu.saveGame
+            throw new UnsupportedOperationException();
+    }
 
-	public void stopGame() {
-		// TODO - implement Jeu.stopGame
-		throw new UnsupportedOperationException();
-	}
+    public void stopGame() {
+            // TODO - implement Jeu.stopGame
+            throw new UnsupportedOperationException();
+    }
 
-	/**
-	 * 
-	 * @param Entreprise
-	 */
-	public void removeEntreprise(Entreprise Entreprise) {
-		// TODO - implement Jeu.removeEntreprise
-		throw new UnsupportedOperationException();
-	}
+    /**
+     * 
+     * @param entreprise
+     */
+    public void removeEntreprise(Entreprise entreprise) {
+            // TODO - implement Jeu.removeEntreprise
+            throw new UnsupportedOperationException();
+    }
 
-	public Jeu() {
-		// TODO - implement Jeu.Jeu
-		throw new UnsupportedOperationException();
-	}
+    public Jeu() {
+            // TODO - implement Jeu.Jeu
+            throw new UnsupportedOperationException();
+    }
 
-	public void augmenterTour() {
-		// TODO - implement Jeu.augmenterTour
-		throw new UnsupportedOperationException();
-	}
+    public void augmenterTour() {
+            // TODO - implement Jeu.augmenterTour
+            throw new UnsupportedOperationException();
+    }
 
 }

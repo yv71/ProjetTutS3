@@ -5,36 +5,47 @@
  */
 package capitalism.metier;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  *
  * @author Damien
  */
 public class Map {
 
-	private Jeu Jeu;
+    private Jeu jeu;
+    private HashMap<Coordonnee,Case> hashMapCases;
+    private ArrayList<Case> listeCases;
 
-	/**
-	 * 
-	 * @param x
-	 * @param y
-	 */
-	public Case getCaseByCoord(int x, int y) {
-		// TODO - implement Map.getCaseByCoord
-		throw new UnsupportedOperationException();
-	}
+    public Map(Jeu jeu, HashMap<Coordonnee, Case> hashMapCases, ArrayList<Case> listeCases) {
+        this.jeu = jeu;
+        this.hashMapCases = new HashMap();
+        this.listeCases = new ArrayList();
+    }
 
-	public void afficheMap() {
-		// TODO - implement Map.afficheMap
-		throw new UnsupportedOperationException();
-	}
+    public Jeu getJeu() {
+        return jeu;
+    }
 
-	/**
-	 * 
-	 * @param Jeu
-	 */
-	public Map(jeu Jeu) {
-		// TODO - implement Map.Map
-		throw new UnsupportedOperationException();
-	}
+    public void setJeu(Jeu jeu) {
+        this.jeu = jeu;
+    }
 
+    public HashMap<Coordonnee, Case> getHashMapCases() {
+        return hashMapCases;
+    }
+
+    public void setHashMapCases(HashMap<Coordonnee, Case> hashMapCases) {
+        this.hashMapCases = hashMapCases;
+    }
+
+    public ArrayList<Case> getListeCases() {
+        return listeCases;
+    }
+
+    public void setListeCases(ArrayList<Case> listeCases) {
+        this.listeCases = listeCases;
+    }
+    
 }
