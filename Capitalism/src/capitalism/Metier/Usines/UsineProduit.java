@@ -14,7 +14,12 @@ import capitalism.Metier.Entreprises.Entreprise;
 public class UsineProduit extends Usine {
 
 //---------- CONSTRUCTEURS -----------------------------------------------------
-    
+
+    /**
+     *
+     * @param nom
+     * @param proprietaire
+     */
     public UsineProduit(String nom, Entreprise proprietaire) {
         super(nom, proprietaire);
     }
